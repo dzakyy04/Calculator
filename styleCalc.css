@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+.calc-container {
+    position: fixed;
+    left: 50%;
+    margin-left: -200px;
+    top: 50%;
+    margin-top: -300px;
+    width: 400px;
+    height: 600px;
+    border-radius: 30px;
+    background-color: #111;
+    box-shadow: 0 0 5px rgb(43, 255, 0);
+    transition: 1s;
+}
+
+.calc-container:hover {
+    box-shadow: 0 0 20px rgb(43, 255, 0);
+    transition: 0.3s;
+}
+
+form input {
+    height: 120px;
+    width: 360px;
+    margin: 30px 20px 5px;
+    padding: 0 20px;
+    text-align: right;
+    font-size: 56px;
+    border: 1px solid rgb(18, 105, 0);
+    background-color: rgb(122, 146, 117);
+    border-radius: 20px;
+}
+
+.row {
+    display: flex;
+    margin: 13px 20px;
+    justify-content: space-between;
+}
+
+button {
+    width: 80px;
+    height: 70px;
+    background-color: rgb(0, 160, 139);
+    color: #111;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+button:hover {
+    box-shadow: 0 0 5px rgb(0, 160, 139);
+}
+
+button.clean, button.equal {
+    background-color: rgb(18, 105, 0);
+    color: white;
+}
+
+button.clean:hover,
+button.equals:hover {
+    box-shadow: 0 0 5px rgb(18, 105, 0);
+}
+
+button.delete {
+    background-color: rgb(211, 0, 0);
+    color: white;
+    padding-right: 5px;
+}
+
+button.delete:hover {
+    box-shadow: 0 0 5px rgb(211, 0, 0);
+}
+
+button.op {
+    background-color: rgb(171, 190, 0);
+    color: #111;
+}
+
+button.op:hover {
+    box-shadow: 0 0 5px rgb(171, 190, 0);
+}
+
+button:active {
+    filter: brightness(1.5);
+}

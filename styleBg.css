@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+section.bg {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: #111;
+    white-space: nowrap;
+}
+
+section.bg .row {
+    position: relative;
+    display: flex;
+    transform: rotate(-30deg);
+    left: -7%;
+    top: -60%;
+}
+
+section.bg .row div:nth-child(2) {
+    padding: 0 12px;
+}
+
+section.bg .row {
+    user-select: none;
+}
+
+section.bg .row:nth-child(odd) div {
+    user-select: none;
+    animation: animate1 50s linear infinite;
+}
+
+section.bg .row:nth-child(even) div {
+    user-select: none;
+    animation: animate2 50s linear infinite;
+}
+
+section.bg .row div i {
+    padding: 12px;
+    font-size: 64px;
+    color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+
+section.bg .row:nth-child(odd) div i:nth-child(odd):hover {
+    color: rgb(43, 255, 0);
+    text-shadow: 0 0 120px rgb(43, 255, 0);
+    transition: 0s;
+}
+
+section.bg .row:nth-child(odd) div i:nth-child(even):hover {
+    color: rgb(0, 255, 221);
+    text-shadow: 0 0 120px rgb(0, 255, 221);
+    transition: 0s;
+}
+
+section.bg .row:nth-child(even) div i:nth-child(odd):hover {
+    color: rgb(255, 0, 0);
+    text-shadow: 0 0 120px rgb(255, 0, 0);
+    transition: 0s;
+}
+
+section.bg .row:nth-child(even) div i:nth-child(even):hover {
+    color: rgb(229, 255, 0);
+    text-shadow: 0 0 120px rgb(229, 255, 0);
+    transition: 0s;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translate(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translate(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
