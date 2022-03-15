@@ -90,3 +90,34 @@ button.op:hover {
 button:active {
     filter: brightness(1.5);
 }
+
+@media screen and (max-width: 576px) {
+    .calc-container {
+        width: 300px;
+        height: 450px;
+        margin-left: -150px;
+        top: 50%;
+        margin-top: -225px;
+    }
+
+    form input {
+        height: 90px;
+        width: 260px;
+        margin: 20px;
+        padding: 0 18px;
+        margin-bottom: 0;
+        font-size: 42px;
+    }
+
+    button {
+        width: 60px;
+        height: 50px;
+        background-color: rgb(0, 160, 139);
+        color: #111;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        font-weight: bold;
+    }
+}    
